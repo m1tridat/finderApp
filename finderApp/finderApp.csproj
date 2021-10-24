@@ -4,7 +4,33 @@
         <OutputType>WinExe</OutputType>
         <TargetFramework>net5.0-windows</TargetFramework>
         <UseWPF>true</UseWPF>
+        <ApplicationIcon>Images/Icons/icon.ico</ApplicationIcon>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Fody" Version="6.5.5">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="PropertyChanged.Fody" Version="3.4.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Images\Icons\icon.ico" />
+      <Resource Include="Images\Icons\icon.ico" />
+      <None Remove="Images\drive.png" />
+      <Resource Include="Images\drive.png" />
+      <None Remove="Images\file.png" />
+      <Resource Include="Images\file.png" />
+      <None Remove="Images\icon.png" />
+      <Resource Include="Images\icon.png" />
+      <None Remove="Images\folder-closed.png" />
+      <None Remove="Images\folder-open.png" />
+      <Resource Include="Images\folder-open.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Resource Include="Images\folder-closed.png" />
+    </ItemGroup>
 
 </Project>

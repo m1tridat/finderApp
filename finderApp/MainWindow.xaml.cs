@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using finderApp.ViewModels;
 
 namespace finderApp
 {
@@ -10,6 +11,7 @@ namespace finderApp
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new MainWindowViewModel(this);
         }
     }
 }
